@@ -16,7 +16,7 @@ def leerParametro():
     archivo.close()#cerramos el archivo
 
 def abrirWhatsapp():
-    ubicacionLogoWhastapp = pyautogui.locateCenterOnScreen("logo.png") #busca el logo de la aplicacion en la pantalla
+    ubicacionLogoWhastapp = pyautogui.locateCenterOnScreen("media/logo.png") #busca el logo de la aplicacion en la pantalla
     pyautogui.leftClick(ubicacionLogoWhastapp) #clickea
 time.sleep(1)#aguarda 
 def buscarContacto():
@@ -26,8 +26,8 @@ def buscarContacto():
     #cuando entramos a la aplicacion la barra de busqueda tiene un fondo negro,
     #pero si clickeamos un fondo gris, por eso "reconocimiento de como esta la barra de busqueda"
     
-    lupaNegra = pyautogui.locateOnScreen("lupaNegra.png") #foto del primer estado de la barra
-    lupaGris = pyautogui.locateOnScreen("lupaGris.png")#foto del segundo
+    lupaNegra = pyautogui.locateOnScreen("media/lupaNegra.png") #foto del primer estado de la barra
+    lupaGris = pyautogui.locateOnScreen("media/lupaGris.png")#foto del segundo
     
     #trato de sacar las coordenadas del primer estado
     try:
