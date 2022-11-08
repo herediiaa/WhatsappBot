@@ -7,6 +7,7 @@ def leerParametro():
     global contenido
     parametro = sys.argv[1] # identifica el nombre del parametro
     path = "C:/Users/hered/OneDrive/Desktop/"+ parametro  #ESTA RUTA HAY QUE CONFIGURAR
+    # Otro ejemplo de ruta puede ser "C:/Users/manolito123/Desktop/carpetaArchivos/" + NOMBREDEARCHIVO.txt
     archivo=open(path,encoding='utf-8')#abre el parametro con su ruta completa(se puede cambiar) 
       
     contenido = archivo.read() #leemos el contenido del parametro.txt
