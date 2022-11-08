@@ -73,6 +73,7 @@ def mandarMensaje():
     for i in mensajeTexto: 
         pyautogui.typewrite(i)
         pyautogui.hotkey("Ctrl","Enter")
+    time.sleep(0.5)
     pyautogui.press("Enter") #lo mando
 
 def whatappBot():
