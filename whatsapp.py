@@ -78,11 +78,10 @@ def mandarMensaje():
 
 def whatappBot():
     leerParametro()
-    time.sleep(2) #aguardo dos segundo
     abrirWhatsapp()
-    time.sleep(1)#aguard un segundo
+    time.sleep(1.5)#espero un segundo y medio
     buscarContacto()
-    time.sleep(1)
+    time.sleep(1)#espero un segundo
     mandarMensaje()
         
 whatappBot()
